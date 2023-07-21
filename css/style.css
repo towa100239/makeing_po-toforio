@@ -1,0 +1,172 @@
+@charset "UTF-8";
+body{
+    width: 100%;
+    font-family: 'Libre Baskerville', serif;
+    color: #fff;
+}
+/*header部分
+--------------------------*/
+#header{
+background: url(../images/menu.jpg);
+height: 100vh;
+}
+.header-content{
+    text-align: center;
+    padding-top: 250px;
+    font-size: 100px;
+}
+.header-content p{
+    font-size: 40px;
+    padding-top: 18px;
+}
+/*main共通部分
+-----------------------*/
+.container{
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+/*Main部分
+-------------------------*/
+.main-text{
+background: url(../images/main.jpg);
+background-size: cover;
+}
+.main-text p{
+    font-size: 60px;
+    text-align: center;
+    padding-top: 280px;
+}
+/*menu部分
+-----------------------*/
+.menu{
+    background: url(../images/手作りお菓子.jpeg);
+    background-size: cover;
+}
+.main-h2{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+.menu-list{
+    display: flex;
+    height: 600px;
+    margin: 0 50px;
+}
+.list-1,
+.list-2{
+    color: #53555b;
+    font-size: 25px;
+    line-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: rgb(255, 255, 255,0.5);
+}
+.list-1 dl,
+.list-1 dt,
+.list-2 dl,
+.list-2 dt {
+    width: 50%;
+}
+.list-1 dl,
+.list-1 dd,
+.list-2 dl,
+.list-2 dd {
+    width: 50%;
+}
+/*shop部分
+----------------------*/
+.shop{
+    background: #E3BCBD;
+    padding-top: 20px;
+}
+.shop-h2{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.shop-h3{
+    font-size: 40px;
+    padding-left: 80px;
+    padding-bottom: 40px;
+}
+.shop-list{
+    padding-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 70px;
+    font-size: 30px;
+}
+.shop-list dl,
+.shop-list dt{
+    width: 20%;
+}
+.shop-list dl,
+.shop-list dd{
+    width: 80%;
+}
+.shop-list img{
+    width: 70px;
+    padding-right: 15px;
+}
+footer{
+    text-align: center;
+    padding-top: 260px;
+    font-size: 20px;
+}
+@media screen and (max-width:834px){
+    /*header
+    -------------------*/
+    .header-content{
+        font-size: 80px;
+    }
+    .header-content p{
+        font-size: 25px;
+    }
+    /*main
+    --------------*/
+    .main-text p{
+        font-size: 25px;
+    }
+    /*menu
+    -------------------*/
+    .menu-list{
+        margin: 0 20px;
+        display: block;
+    }
+    .list-1,
+    .list-2{
+        font-size: 15px;
+        line-height: 70px;
+    }
+    /*shop
+    -------------------*/
+    .shop-h3{
+        font-size: 30px;
+        padding-left: 10px;
+    }
+    .shop-list{
+        display: block;
+        padding-left: 70px;
+        flex-wrap: nowrap;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .shop-list .sr{
+        display: block;
+    }
+    .shop-list dl,
+    .shop-list dt{
+        width: 40%;
+    }
+    .shop-list dl,
+    .shop-list dd{
+        width: 60%;
+    }
+}
